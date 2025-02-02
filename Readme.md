@@ -58,19 +58,19 @@ Use **CircBuf+** when you need:
    In your `build.zig` file, import the dependency:
 
    ```zig
-  const std = @import("std");
+   const std = @import("std");
 
-  pub fn build(b: *std.Build) void {
-       // ...
-       // Add CircBuf+ dependency
-       const circbuf_dep = b.dependency("CircBuf+", .{
-           .target = target,
-           .optimize = optimize,
-       });
+    pub fn build(b: *std.Build) void {
+        // ...
+        // Add CircBuf+ dependency
+        const circbuf_dep = b.dependency("CircBuf+", .{
+            .target = target,
+            .optimize = optimize,
+        });
 
-       exe.root_module.addImport("CircBuf+", circbuf_dep.module("CircBuf+");
-   }
-   ```
+        exe.root_module.addImport("CircBuf+", circbuf_dep.module("CircBuf+");
+    }
+    ```
 
 ## Quick Start
 
