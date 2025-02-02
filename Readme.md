@@ -172,7 +172,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions or suggestions, open an issue on GitHub or contact the maintainer at [christian@brendlinonline.de](mailto:christian@brendlinonline.de).
+For questions or suggestions, open an issue on GitHub.
 
 ---
 
