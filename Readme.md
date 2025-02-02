@@ -78,17 +78,17 @@ Below is a simple example to get you started using **CircBuf+**:
 
 ```zig
 const std = @import("std");
-const AdvancedRingBuffer = @import("advanced_ringbuffer.zig").AdvancedRingBuffer;
+const AdvancedRingBuffer = @import("CircBuf+").AdvancedRingBuffer;
 
 pub fn main() !void {
     // Set up the allocator.
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
-    defer gpa.deinit();
+    defer _ = gpa.deinit();
     const allocator = gpa.allocator();
 
     // Create a single-threaded, non-overwriting ring buffer for i32 values.
     const RingBuffer = AdvancedRingBuffer(i32, false, false);
-    var rb = try RingBuffer.init(allocator, 8);
+    var rb = try RingBuffer.init(@constCast(&allocator), 8);
     defer rb.deinit();
 
     // Push values.
