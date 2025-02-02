@@ -1,8 +1,3 @@
-Below is an optimized version of the README for **CircBuf+**. This version has been streamlined for clarity, consistency, and ease of navigation while retaining all the useful information.
-
----
-
-```markdown
 # CircBuf+
 
 **CircBuf+** is a feature-rich, high-performance ring (circular) buffer library for Zig. It’s designed for modern applications that demand:
@@ -186,4 +181,3 @@ For questions or suggestions, open an issue on GitHub or contact the maintainer 
 ---
 
 Enjoy using **CircBuf+** and thank you for contributing to the growth of the Zig ecosystem!
-```
