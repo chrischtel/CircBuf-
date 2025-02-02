@@ -50,7 +50,7 @@ Use **CircBuf+** when you need:
 1. **Add CircBuf+ as a Dependency:**
 
    ```bash
-   zig fetch --save git+https://github.com/chrischtel/CircBuf-#main
+   zig fetch --save git+https://github.com/chrischtel/CircBufPlus#main
    ```
 
 2. **Update Your Build Script:**
